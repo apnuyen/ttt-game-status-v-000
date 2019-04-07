@@ -10,7 +10,7 @@ def won?(board)
   WIN_COMBINATIONS.detect do |place|
     board[place[0]] == board[place[1]] &&
     board[place[1]] == board[place[2]] &&
-    position_taken?(board, place[0]) #review this line
+    position_taken?(board, place[0]) # means that the position place[0] is not empty
  end
 end
 
